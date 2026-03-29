@@ -4,8 +4,17 @@ import "./Praxis.css";
 const Praxis = () => {
   return (
     <div className="praxis">
-      <h1 className="practice">Praxis für Klassische Homöopathie</h1>
-      <p className="claim">Der ganzheitliche Blick auf Ihre Beschwerden</p>
+      <div className="headline">
+        <h1 className="practice">Praxis für Klassische Homöopathie</h1>
+        <p className="claim">Der ganzheitliche Blick auf Ihre Beschwerden</p>
+      </div>
+      <hr
+        style={{
+          border: "2px solid lightgray",
+          width: "80%",
+          margin: "20px auto",
+        }}
+      />
       <div className="welcome">
         <div className="image">
           <img src="/images/start_01.jpeg" alt="Willkommensbild" />
@@ -17,6 +26,86 @@ const Praxis = () => {
             <p style={{ color: "#E6B325" }}>Yogalehrer</p>
           </span>
         </div>
+      </div>
+
+      <hr
+        style={{
+          border: "2px solid lightgray",
+          width: "80%",
+          margin: "20px auto",
+        }}
+      />
+
+      <div class="text-container">
+        <h4>
+          Viele Menschen, die zu mir in die Praxis kommen, haben bereits einen
+          langen Leidensweg hinter sich.
+        </h4>
+
+        <p>
+          Insbesondere chronische Erkrankungen wie Rheuma, Migräne,
+          Autoimmunerkrankungen, hormonelle Störungen, Allergien oder
+          psychosomatische Beschwerden sind häufige Anliegen von Patientinnen
+          und Patienten.
+        </p>
+
+        <p>
+          Die Behandlung hat zum Ziel, sanft und individuell die körpereigenen
+          Selbstheilungskräfte anzuregen.
+        </p>
+
+        <p>
+          Die grundlegende Behandlungsmethode in meiner Praxis stellt die
+          Klassische Homöopathie dar, die sich bereits seit über 200 Jahren
+          weltweit bewährt hat.
+        </p>
+
+        <p>
+          Je nach Art der Beschwerde ergänzen manuelle Behandlungsverfahren,
+          Körper- und Atemübungen, Entspannungsverfahren oder eine
+          Ernährungsberatung das Vorgehen.
+        </p>
+
+        <h3>Ablauf:</h3>
+        <p>
+          Zunächst einmal nehme ich mir ausreichend Zeit für Sie. Eine
+          gründliche Erstaufnahme bei Erwachsenen bedarf gewöhnlich 1-2 Stunden.
+          Ganz individuell arbeite ich dann eine homöopathische Arznei für Ihr
+          Beschwerdebild aus. Dies können Globuli oder auch Tropfen sein, die
+          Sie je nach Erkrankung über einen bestimmten Zeitraum einnehmen
+          werden.
+        </p>
+
+        <h3>Langfristige Ergebnisse:</h3>
+        <p>
+          Homöopathische Mittel zielen nicht nur darauf ab, Symptome zu
+          behandeln, sondern auch die zugrunde liegende Ursache der Erkrankung
+          zu heilen. Dies kann dazu beitragen, langfristige Ergebnisse zu
+          erzielen, anstatt nur kurzfristige Linderung zu bieten. Über
+          regelmäßige Termine begleite ich Ihre Behandlung und kann bei Bedarf
+          eingreifen und z.B. die Dosierung entsprechend anpassen.
+        </p>
+
+        <p>
+          Die Homöopathie ist eine Heilkunst, die nach festen und erlernbaren
+          Regeln praktiziert wird. Sie wurde von dem deutschen Arzt Dr. Samuel
+          Hahnemann vor rund 200 Jahren entwickelt.
+        </p>
+
+        <p>
+          Sollte aus therapeutischer Sicht der Einsatz von anderen Methoden
+          ergänzend oder auch alternativ zu meiner Behandlung sinnvoll bzw.
+          angezeigt sein, habe ich keine Berührungsängste, Sie entsprechend an
+          erfahrene KollegInnen mit jeweiligen Praxisschwerpunkten zu empfehlen.
+          Mein Behandlungsziel ist stets, dass Sie als Patient dauerhaft und
+          nachhaltig gesünder werden.
+        </p>
+
+        <h3>Termine:</h3>
+        <p>
+          Termine nach Vereinbarung. Termine zwischen Patienten werden so
+          großzügig gelegt, dass i.d.R. keine Wartezeiten entstehen.
+        </p>
       </div>
     </div>
   );

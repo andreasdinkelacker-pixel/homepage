@@ -5,6 +5,14 @@
   padding: 5rem 2rem;
 }
 
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.4rem;
+  gap: 0.3rem;
+}
+
 .practice {
   color: #555;
   font-size: 3rem;
@@ -14,7 +22,8 @@
 }
 
 .welcome {
-  margin-top: 7rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
   display: flex;
   align-items: center;
   gap: 60px;
@@ -37,15 +46,16 @@
 }
 
 .name {
+  color: #555;
   font-size: 3.5rem;
-  font-weight: 460;
+  font-weight: 400;
   margin: 0;
 }
 
 .title {
   font-size: 3rem;
   font-weight: 400;
-  color: #666;
+  color: #959595;
   margin: 0;
 }
 
@@ -59,4 +69,31 @@
   font-size: 2rem;
   font-style: italic;
   color: #555;
+}
+
+.text-container {
+  max-width: 70vw; /* angenehm lesbare Breite */
+  margin-top: 2rem;
+  padding: 30px 20px; /* innen Abstand */
+  border-radius: 12px; /* abgerundete Ecken */
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.text-container h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #00b3ff;
+  font-size: 2rem;
+}
+
+.text-container h4 {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.text-container p {
+  margin-bottom: 15px;
 }

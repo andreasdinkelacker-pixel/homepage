@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
       <Link to="/">Praxis</Link>
       <Link to="/yoga">Yoga</Link>
-      <Link to="/auszeichnungen">Auszeichnungen</Link>
+      <Link to="/qualifikationen">Qualifikationen</Link>
       <Link to="/kontakt">Kontakt</Link>
     </>
   );
@@ -39,11 +39,13 @@ const Navbar = () => {
   return (
     <div className="Header">
       <div className="left-side">
-          <Link to="/"><img className="logo" src="/images/Logo.png" alt="Logo" width="200" /></Link>
+        <Link to="/">
+          <img className="logo" src="/images/Logo.png" alt="Logo" width="200" />
+        </Link>
       </div>
       <div className="right-side">
-        <p>tel: 06271/ 9477477</p>
-        
+        <p>Tel: 06271/ 9477477</p>
+
         <div className="link-items">
           <nav className={farEnough ? "nav1" : "nav2"}>
             {(farEnough && links) || (menuOpen && links)}

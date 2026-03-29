@@ -65,6 +65,13 @@ const Yoga = () => {
           )}
         </div>
       </div>
+      <hr
+        style={{
+          border: "2px solid lightgray",
+          width: "80%",
+          margin: "20px auto",
+        }}
+      />
       <div className="outside-container">
         <div className="second-container">
           <div className="certification-img">
@@ -75,6 +82,51 @@ const Yoga = () => {
             gesetzlicher Krankenkassen zur Zertifizierung von Präventionskursen
             (§ 20 SGB V)
           </div>
+        </div>
+      </div>
+      <hr
+        style={{
+          border: "2px solid lightgray",
+          width: "80%",
+          margin: "20px auto",
+        }}
+      />
+      <div class="course-container">
+        <div style={{ maxWidth: "80vw" }}>
+          <h1>Laufende Kurse</h1>
+
+          <ul class="course-list">
+            <li>
+              Montag 17 - 18 Uhr im{" "}
+              <a href="#" target="_blank">
+                Palestra
+              </a>
+            </li>
+            <li>
+              Dienstag 17.30 - 18.45 Uhr im{" "}
+              <a href="#" target="_blank">
+                Yogazentrum Krösselbach
+              </a>
+            </li>
+            <li>
+              Donnerstag 15 - 16 Uhr in der{" "}
+              <a href="#" target="_blank">
+                Volkshochschule Eberbach
+              </a>
+            </li>
+            <li>
+              Online, Dienstag 19.30 - 20.30 Uhr — Anmeldung über das{" "}
+              <a href="#" target="_blank">
+                Kontaktformular
+              </a>
+            </li>
+          </ul>
+
+          <p class="extra-text">
+            Darüber hinaus biete ich Kurse für Unternehmen im Rahmen der
+            betrieblichen Gesundheitsförderung an, sowie private Kurse für
+            Gruppen oder Einzelpersonen.
+          </p>
         </div>
       </div>
     </>

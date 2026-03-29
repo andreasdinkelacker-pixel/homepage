@@ -6,8 +6,6 @@
   padding: 0 2rem;
   max-width: 1200px;
   margin: 4rem auto;
-  background-color: rgba(255, 208, 0, 0.2);
-  border: 1rem solid rgba(255, 208, 0, 0.411);
 }
 
 .image-section {
@@ -60,15 +58,13 @@
   gap: 1.5rem;
   padding: 1.5rem;
   border-radius: 12px;
-  background-color: #FAFAFB;
+  background-color: #fafafb;
 }
 
 .outside-container {
   border-radius: 12px;
   margin: 4rem auto;
   width: fit-content;
-  padding: 1rem;
-  background: linear-gradient(45deg, rgba(255, 208, 0, 0.411), var(--accent));
 }
 
 .certification-img img {
@@ -78,10 +74,10 @@
 }
 
 .certification-text {
-  font-size: 1rem;
+  font-size: 1.4rem;
   line-height: 1.5;
   color: #333;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 /* --------------------
@@ -132,4 +128,51 @@
   .certification-img img {
     width: 120px;
   }
+}
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 6rem;
+  margin-bottom: 7rem;
+  font-size: 1.6rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Orange Überschrift */
+.course-container h1 {
+  font-size: 2.4rem;
+  color: #f57c00;
+  margin-bottom: 15px;
+}
+
+/* Liste */
+.course-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.course-list li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #f57c00;
+}
+
+/* Links (Orte) */
+.course-container a {
+  color: #72471e;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.course-container a:hover {
+  text-decoration: underline;
+}
+
+/* Zusatztext */
+.extra-text {
+  margin-top: 15px;
+  line-height: 1.6;
 }

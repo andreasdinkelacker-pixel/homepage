@@ -1,13 +1,14 @@
 :root {
-  --primary: #0075C9;     /* Blau aus dem Logo */
-  --accent: #F7931E;      /* Orange aus dem Logo */
+  --primary: #0075c9; /* Blau aus dem Logo */
+  --accent: #f7931e; /* Orange aus dem Logo */
   --footer-font: #ffa600;
-  --text-gray: #7F7F7F;   /* Schriftgrau */
-  --background: #F4F7FA;  /* Heller Hintergrund */
+  --text-gray: #7f7f7f; /* Schriftgrau */
+  --background: #f4f7fa; /* Heller Hintergrund */
   --header-height: 7rem;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -29,3 +30,11 @@ main {
   padding: 0;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  overflow-x: hidden;
+}

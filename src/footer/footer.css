@@ -1,0 +1,84 @@
+.footer {
+  background-color: #3e8cc4; /* Hauptfarbe Blau */
+  color: #fff;
+  padding: 3rem 1rem 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-title {
+  margin-bottom: 1rem;
+  color: var(--footer-font); /* Orange Akzent */
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #f4f4f4;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-section a:hover {
+  color: var(--footer-font);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section li {
+  margin-bottom: 0.5rem;
+}
+
+.socials {
+  margin-top: 0.5rem;
+}
+
+.socials a {
+  margin-right: 10px;
+  font-size: 1.3rem;
+  color: #f4f4f4;
+  transition: color 0.2s ease-in-out;
+}
+
+.socials a:hover {
+  color: var(--footer-font);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsives Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .socials a {
+    margin: 0 8px;
+  }
+}

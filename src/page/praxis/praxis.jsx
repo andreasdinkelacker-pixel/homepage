@@ -75,9 +75,7 @@ const Praxis = () => {
           Zunächst einmal nehme ich mir ausreichend Zeit für Sie. Eine
           gründliche Erstaufnahme bei Erwachsenen bedarf gewöhnlich 1-2 Stunden.
           Ganz individuell arbeite ich dann eine homöopathische Arznei für Ihr
-          Beschwerdebild aus. Dies können Globuli oder auch Tropfen sein, die
-          Sie je nach Erkrankung über einen bestimmten Zeitraum einnehmen
-          werden.
+          Beschwerdebild aus.
         </p>
 
         <h3>Langfristige Ergebnisse:</h3>
@@ -87,13 +85,7 @@ const Praxis = () => {
           zu heilen. Dies kann dazu beitragen, langfristige Ergebnisse zu
           erzielen, anstatt nur kurzfristige Linderung zu bieten. Über
           regelmäßige Termine begleite ich Ihre Behandlung und kann bei Bedarf
-          eingreifen und z.B. die Dosierung entsprechend anpassen.
-        </p>
-
-        <p>
-          Die Homöopathie ist eine Heilkunst, die nach festen und erlernbaren
-          Regeln praktiziert wird. Sie wurde von dem deutschen Arzt Dr. Samuel
-          Hahnemann vor rund 200 Jahren entwickelt.
+          Anpassungen vornehmen.
         </p>
 
         <p>
@@ -103,6 +95,25 @@ const Praxis = () => {
           erfahrene KollegInnen mit jeweiligen Praxisschwerpunkten zu empfehlen.
           Mein Behandlungsziel ist stets, dass Sie als Patient dauerhaft und
           nachhaltig gesünder werden.
+        </p>
+
+        <h3>Kosten:</h3>
+        <p>
+          Gerne berate ich Sie bei der Erstanmeldung über die für Sie
+          entstehenden Kosten.
+        </p>
+        <p>
+          Heilpraktikerkosten werden von den gesetzlichen Krankenkassen in der
+          Regel nicht erstattet.
+        </p>
+        <p>
+          Private Kranken- und Zusatzversicherungen übernehmen meist den größten
+          Teil der Heilpraktikerleistungen.
+        </p>
+        <p>
+          Bitte erkundigen Sie sich daher vor der Behandlung, welche
+          Gebührensätze Ihnen erstattet werden. Es ist damit zu rechnen, dass
+          der Patient Eigenleistungen zu erbringen hat.
         </p>
 
         <h3>Termine:</h3>

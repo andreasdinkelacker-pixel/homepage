@@ -46,7 +46,7 @@ const Contact = () => {
         <input
           type="hidden"
           name="accessKey"
-          value="sf_7e1185ae249f6761a8b1ff99R"
+          value="sf_7e1185ae249f6761a8b1ff99"
         />
 
         {/* Optional: Betreff */}

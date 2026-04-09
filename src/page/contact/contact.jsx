@@ -4,10 +4,18 @@ import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [status, setStatus] = useState("");
+  const [consent, setConsent] = useState(false);
   const recaptchaRef = useRef();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // ❗ Blockieren wenn Checkbox nicht angehakt
+    if (!consent) {
+      setStatus("Bitte stimmen Sie der Datenschutzerklärung zu.");
+      return;
+    }
+
     setStatus("Wird gesendet...");
 
     const formData = new FormData(e.target);
@@ -28,6 +36,7 @@ const Contact = () => {
         setStatus("Nachricht erfolgreich gesendet!");
         e.target.reset();
         recaptchaRef.current.reset();
+        setConsent(false);
       } else {
         setStatus("Fehler beim Senden. Bitte erneut versuchen.");
       }
@@ -49,14 +58,14 @@ const Contact = () => {
           value="sf_7e1185ae249f6761a8b1ff99"
         />
 
-        {/* Optional: Betreff */}
+        {/* Betreff */}
         <input
           type="hidden"
           name="subject"
           value="Neue Nachricht von der Website"
         />
 
-        {/* Honeypot (Spam-Schutz) */}
+        {/* Honeypot */}
         <input type="text" name="honeypot" style={{ display: "none" }} />
 
         <div className="form-group">
@@ -84,6 +93,30 @@ const Contact = () => {
         <div className="form-group">
           <label htmlFor="message">Nachricht</label>
           <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        {/* DSGVO Hinweis + Checkbox */}
+        <div className="form-group checkbox-group">
+          <p style={{ fontSize: "0.9rem", color: "#000000" }}>
+            Datenschutz Hinweis: Ihre Angaben werden zur Bearbeitung der
+            Kontaktanfrage und deren Abwicklung gem. Art. 6 Abs. 1 lit. b) DSGVO
+            verarbeitet.
+          </p>
+
+          <label>
+            <input
+              type="checkbox"
+              checked={consent}
+              onChange={(e) => setConsent(e.target.checked)}
+              required
+            />{" "}
+            Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen und bin
+            damit einverstanden, dass die von mir angegebenen Daten
+            zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage
+            elektronisch erhoben und gespeichert werden. Mit dem Absenden des
+            Kontaktformulars erkläre ich mich mit der Verarbeitung
+            einverstanden. *
+          </label>
         </div>
 
         {/* reCAPTCHA */}

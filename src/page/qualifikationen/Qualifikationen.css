@@ -1,0 +1,98 @@
+.qualifikationen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 2rem;
+  gap: 3rem;
+}
+
+.stempel {
+  width: 100%;
+}
+
+.stempel img {
+  width: 5rem;
+}
+
+/* Grundlayout */
+.vita {
+  font-size: 1.6rem;
+  max-width: 80vw;
+  margin: auto;
+  padding: 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #2b2b2b;
+  line-height: 1.6;
+}
+
+/* Überschriften */
+.vita h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d4d4d4;
+  padding-bottom: 10px;
+}
+
+.vita h3 {
+  margin-top: 35px;
+  font-size: 2.2rem;
+  color: #3a6f6f;
+}
+
+.vita h4 {
+  margin-top: 20px;
+  font-size: 1.8rem;
+  color: #555;
+}
+
+/* Text */
+.vita p {
+  margin: 8px 0;
+}
+
+/* Listen */
+.vita ul {
+  margin: 10px 0 20px 20px;
+  padding: 0;
+}
+
+.vita li {
+  margin-bottom: 6px;
+}
+
+/* Links (unterstrichen und klar erkennbar) */
+.vita a {
+  color: #3a6f6f;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.vita a:hover {
+  color: #2b4f4f;
+}
+
+/* Feine visuelle Trennung */
+.vita section,
+.vita ul {
+  margin-bottom: 15px;
+}
+
+/* Optional: dezente Hervorhebung */
+.vita strong {
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .vita {
+    padding: 15px;
+  }
+
+  .vita h2 {
+    font-size: 2.4rem;
+  }
+
+  .vita h3 {
+    font-size: 2rem;
+  }
+}

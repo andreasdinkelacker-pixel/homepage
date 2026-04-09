@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Yoga.css";
 
 const Yoga = () => {
@@ -44,9 +45,9 @@ const Yoga = () => {
               </div>
               <div>
                 Weitere Einflüsse in meinem Gruppen- und Einzelunterricht haben
-                CANTIENICA® (Methode für Körperform und Haltung), Tibetisches
-                Heilyoga, Faszientraining, funktionelles Training, sowie
-                Achtsamkeits- / Einsichtsmeditation.
+                CANTIENICA®, Tibetisches Heilyoga, Faszientraining,
+                funktionelles Training, sowie Achtsamkeits- /
+                Einsichtsmeditation.
               </div>
               <div>
                 Mein Wunsch ist es, Menschen durch Yoga zu einem tieferen
@@ -98,27 +99,28 @@ const Yoga = () => {
           <ul class="course-list">
             <li>
               Montag 17 - 18 Uhr im{" "}
-              <a href="#" target="_blank">
+              <a
+                href="https://palestra-fitness.de/project/hatha-yoga/"
+                target="_blank"
+              >
                 Palestra
               </a>
             </li>
             <li>
               Dienstag 17.30 - 18.45 Uhr im{" "}
-              <a href="#" target="_blank">
+              <a href="https://yogazentrum-kroesselbach.de/" target="_blank">
                 Yogazentrum Krösselbach
               </a>
             </li>
             <li>
               Donnerstag 15 - 16 Uhr in der{" "}
-              <a href="#" target="_blank">
+              <a href="https://www.vhs-eb-ng.de/" target="_blank">
                 Volkshochschule Eberbach
               </a>
             </li>
             <li>
               Online, Dienstag 19.30 - 20.30 Uhr — Anmeldung über das{" "}
-              <a href="#" target="_blank">
-                Kontaktformular
-              </a>
+              <Link to="/kontakt">Kontaktformular</Link>
             </li>
           </ul>
 

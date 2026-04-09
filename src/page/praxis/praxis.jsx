@@ -26,6 +26,10 @@ const Praxis = () => {
             <p style={{ color: "#E6B325" }}>Yogalehrer</p>
           </span>
         </div>
+        <div className="stempel">
+          <img src="/images/Stempel1.jpg" alt="Stempel/Zertifikat_1" />
+          <img src="/images/Stempel2.jpg" alt="Stempel/Zertifikat_2" />
+        </div>
       </div>
 
       <hr

@@ -1,6 +1,5 @@
 import React, { useState, useRef } from "react";
 import "./Contact.css";
-import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
   const [status, setStatus] = useState("");
@@ -118,12 +117,6 @@ const Contact = () => {
             einverstanden. *
           </label>
         </div>
-
-        {/* reCAPTCHA */}
-        <ReCAPTCHA
-          sitekey="6LcYx64sAAAAACaZdN-XPGPRykHQRYbZm_-YtBFg"
-          ref={recaptchaRef}
-        />
 
         <button type="submit">Nachricht senden</button>
 

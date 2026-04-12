@@ -29,10 +29,21 @@ const Navbar = () => {
 
   const links = (
     <>
-      <Link to="/">Praxis</Link>
-      <Link to="/yoga">Yoga</Link>
-      <Link to="/qualifikationen">Qualifikation</Link>
-      <Link to="/kontakt">Kontakt</Link>
+      <Link onClick={() => menuOpen && setMenuOpen(false)} to="/">
+        Praxis
+      </Link>
+      <Link onClick={() => menuOpen && setMenuOpen(false)} to="/yoga">
+        Yoga
+      </Link>
+      <Link
+        onClick={() => menuOpen && setMenuOpen(false)}
+        to="/qualifikationen"
+      >
+        Qualifikation
+      </Link>
+      <Link onClick={() => menuOpen && setMenuOpen(false)} to="/kontakt">
+        Kontakt
+      </Link>
     </>
   );
 

@@ -4,7 +4,7 @@ function Impressum() {
   return (
     <div className="impressum">
       <h1>Impressum</h1>
-      <h2>Angaben gemäß § 5 TMG</h2>
+      <h2>Angaben gemäß § 5 DDG</h2>
       <p>Andreas Dinkelacker</p>
       <p>Heilpraktiker</p>
       <p>In der Au 6</p>

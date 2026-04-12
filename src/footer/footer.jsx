@@ -1,61 +1,44 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-section about">
-          <h2 className="footer-title">Über uns</h2>
-          <p>
-            Wir entwickeln moderne Weblösungen mit Fokus auf Performance,
-            Sicherheit und Benutzerfreundlichkeit.
-          </p>
-        </div>
-
-        <div className="footer-section links">
-          <h2 className="footer-title">Schnellzugriff</h2>
-          <ul>
-            <li>
-              <a href="#home">Startseite</a>
-            </li>
-            <li>
-              <a href="#projects">Projekte</a>
-            </li>
-            <li>
-              <a href="#contact">Kontakt</a>
-            </li>
-            <li>
-              <a href="#impressum">Impressum</a>
-            </li>
-          </ul>
-        </div>
-
         <div className="footer-section contact">
-          <h2 className="footer-title">Kontakt</h2>
+          <h1 className="footer-title">Andreas Dinkelacker</h1>
+          <p>In der Au 6 (im PALESTRA) | 69412 Eberbach­</p>
           <p>
             Email:{" "}
-            <a href="mailto:info@deinewebseite.de">info@deinewebseite.de</a>
+            <a href="mailto:info@andreas-dinkelacker.de">
+              info@andreas-dinkelacker.de
+            </a>
           </p>
-          <p>Telefon: +49 123 456789</p>
-          <div className="socials">
-            <a href="#">
-              <i>Insta</i>
-            </a>
-            <a href="#">
-              <i>You Tube</i>
-            </a>
-            <a href="#">
-              <i>Facebook</i>
-            </a>
-          </div>
+          <p>Telefon: 06271/9477477</p>
+        </div>
+        <div className="rechtliches">
+          <p>
+            <Link
+              style={{ color: "whitesmoke", fontSize: "1.4rem" }}
+              to="/impressum"
+            >
+              Impressum
+            </Link>
+          </p>
+          <p>
+            <Link
+              style={{ color: "whitesmoke", fontSize: "1.4rem" }}
+              to="/datenschutz"
+            >
+              Datenschutz
+            </Link>
+          </p>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>
-          © {new Date().getFullYear()} Deine Webseite – Alle Rechte vorbehalten.
-        </p>
+        <p>© {new Date().getFullYear()} Andreas Dinkelacker</p>
       </div>
     </footer>
   );

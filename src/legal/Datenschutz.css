@@ -1,0 +1,14 @@
+.datenschutz {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.datenschutz h2 {
+  margin-top: 1rem;
+}
+
+.datenschutz h3 {
+  margin-top: 0.6rem;
+}

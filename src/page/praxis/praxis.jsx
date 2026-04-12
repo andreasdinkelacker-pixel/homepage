@@ -80,12 +80,12 @@ const Praxis = () => {
 
         <h3>Langfristige Ergebnisse:</h3>
         <p>
-          Homöopathische Mittel zielen nicht nur darauf ab, Symptome zu
-          behandeln, sondern auch die zugrunde liegende Ursache der Erkrankung
-          zu heilen. Dies kann dazu beitragen, langfristige Ergebnisse zu
-          erzielen, anstatt nur kurzfristige Linderung zu bieten. Über
-          regelmäßige Termine begleite ich Ihre Behandlung und kann bei Bedarf
-          Anpassungen vornehmen.
+          Homöopathische Mittel wirken nicht nur auf die Symptome, sondern
+          setzen gezielt bei den zugrunde liegenden Ursachen an. So können
+          nachhaltige Verbesserungen erreicht werden, statt nur kurzfristige
+          Linderung zu bieten. Im Rahmen regelmäßiger Termine begleite ich Ihre
+          Behandlung und passe das Mittel bei Bedarf an, um optimale Ergebnisse
+          zu erzielen.
         </p>
 
         <p>

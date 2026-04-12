@@ -5,7 +5,7 @@ const Qualifikationen = () => {
   return (
     <div className="qualifikationen">
       <section class="vita">
-        <h2>Vita & Qualifikationen</h2>
+        <h2>Qualifikation</h2>
 
         <p>
           <strong>Universität Freiburg</strong> – Dipl. Hydrologe
@@ -85,7 +85,7 @@ const Qualifikationen = () => {
             Diplom{" "}
             <a href="https://cantienica.com/" target="_blank">
               Cantienica®
-            </a>
+            </a>{" "}
             in Yoga (2010)
           </li>
           <li>

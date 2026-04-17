@@ -4,7 +4,7 @@ import "./Qualifikationen.css";
 const Qualifikationen = () => {
   return (
     <div className="qualifikationen">
-      <section class="vita">
+      <section className="vita">
         <h2>Qualifikation</h2>
 
         <p>
@@ -117,7 +117,7 @@ const Qualifikationen = () => {
           <li>Teilnahme an zahlreichen Arbeitskreisen</li>
         </ul>
       </section>
-      <div className="stempel">
+      <div className="stempel_">
         <img src="/images/Stempel1.jpg" alt="Stempel/Zertifikat_1" />
         <img src="/images/Stempel2.jpg" alt="Stempel/Zertifikat_2" />
         <img src="/images/yoga_02.png" alt="certification" />

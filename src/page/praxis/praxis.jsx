@@ -19,16 +19,18 @@ const Praxis = () => {
         <div className="image">
           <img src="/images/start_01.jpeg" alt="Willkommensbild" />
         </div>
-        <div className="text">
-          <h1 className="name">Andreas Dinkelacker</h1>
-          <span className="title">
-            <p style={{ color: "#2466a3" }}>Heilpraktiker</p> |{" "}
-            <p style={{ color: "#E6B325" }}>Yogalehrer</p>
-          </span>
-        </div>
-        <div className="stempel">
-          <img src="/images/Stempel1.jpg" alt="Stempel/Zertifikat_1" />
-          <img src="/images/Stempel2.jpg" alt="Stempel/Zertifikat_2" />
+        <div>
+          <div className="text">
+            <h1 className="name">Andreas Dinkelacker</h1>
+            <span className="title">
+              <p style={{ color: "#2466a3" }}>Heilpraktiker</p> |{" "}
+              <p style={{ color: "#E6B325" }}>Yogalehrer</p>
+            </span>
+          </div>
+          <div className="stempel">
+            <img src="/images/Stempel1.jpg" alt="Stempel/Zertifikat_1" />
+            <img src="/images/Stempel2.jpg" alt="Stempel/Zertifikat_2" />
+          </div>
         </div>
       </div>
 
@@ -40,7 +42,7 @@ const Praxis = () => {
         }}
       />
 
-      <div class="text-container">
+      <div className="text-container">
         <h4>
           Viele Menschen, die zu mir in die Praxis kommen, haben bereits einen
           langen Leidensweg hinter sich.

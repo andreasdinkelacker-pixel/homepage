@@ -6,12 +6,17 @@
   gap: 3rem;
 }
 
-.stempel {
+.stempel_ {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8rem;
 }
 
-.stempel img {
-  width: 5rem;
+.stempel_ img {
+  width: 7rem;
+  height: auto;
 }
 
 /* Grundlayout */

@@ -92,11 +92,11 @@ const Yoga = () => {
           margin: "20px auto",
         }}
       />
-      <div class="course-container">
+      <div className="course-container">
         <div style={{ maxWidth: "80vw" }}>
           <h1>Laufende Kurse</h1>
 
-          <ul class="course-list">
+          <ul className="course-list">
             <li>
               Montag 17 - 18 Uhr im{" "}
               <a
@@ -124,7 +124,7 @@ const Yoga = () => {
             </li>
           </ul>
 
-          <p class="extra-text">
+          <p className="extra-text">
             Darüber hinaus biete ich Kurse für Unternehmen im Rahmen der
             betrieblichen Gesundheitsförderung an, sowie private Kurse für
             Gruppen oder Einzelpersonen.

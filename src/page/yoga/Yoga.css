@@ -135,19 +135,31 @@
   justify-content: center;
   margin-top: 6rem;
   margin-bottom: 7rem;
-  font-size: 1.6rem;
+
   font-family: Arial, sans-serif;
   color: #333;
+
+  font-size: clamp(1rem, 2vw, 1.6rem);
+
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-/* Orange Überschrift */
+.course-content {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Überschrift */
+
 .course-container h1 {
-  font-size: 2.4rem;
+  font-size: clamp(2rem, 4vw, 2.4rem);
   color: #f57c00;
   margin-bottom: 15px;
 }
 
 /* Liste */
+
 .course-list {
   list-style: none;
   padding: 0;
@@ -155,16 +167,19 @@
 }
 
 .course-list li {
-  margin-bottom: 10px;
-  padding-left: 10px;
+  margin-bottom: 12px;
+  padding-left: 12px;
   border-left: 3px solid #f57c00;
+  line-height: 1.6;
 }
 
-/* Links (Orte) */
+/* Links */
+
 .course-container a {
   color: #72471e;
   text-decoration: none;
   font-weight: 500;
+  word-break: break-word;
 }
 
 .course-container a:hover {
@@ -172,7 +187,52 @@
 }
 
 /* Zusatztext */
+
 .extra-text {
   margin-top: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .course-container {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+
+  .course-content {
+    max-width: 90%;
+  }
+}
+
+/* Smartphone */
+
+@media (max-width: 600px) {
+  .course-container {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 0 1rem;
+  }
+
+  .course-content {
+    max-width: 100%;
+  }
+
+  .course-list li {
+    padding-left: 10px;
+    margin-bottom: 14px;
+  }
+
+  .extra-text {
+    margin-top: 20px;
+  }
+}
+
+/* Sehr kleine Geräte */
+
+@media (max-width: 380px) {
+  .course-list li {
+    line-height: 1.7;
+  }
 }

@@ -18,13 +18,8 @@ const Contact = () => {
     setStatus("Wird gesendet...");
 
     const formData = new FormData(e.target);
-
-    // reCAPTCHA Token holen
-    const token = recaptchaRef.current.getValue();
-    formData.append("recaptchaToken", token);
-
     try {
-      const response = await fetch("https://api.staticforms.xyz/submit", {
+      const response = await fetch("https://api.staticforms.dev/submit", {
         method: "POST",
         body: formData,
       });
@@ -33,14 +28,12 @@ const Contact = () => {
 
       if (result.success) {
         setStatus("Nachricht erfolgreich gesendet!");
-        e.target.reset();
-        recaptchaRef.current.reset();
-        setConsent(false);
       } else {
-        setStatus("Fehler beim Senden. Bitte erneut versuchen.");
+        setStatus(`Fehler: ${result.message || "Unbekannter Fehler"}`);
       }
     } catch (error) {
-      setStatus("Serverfehler. Bitte später erneut versuchen.");
+      console.error(error);
+      setStatus(`Catch: ${error.message}`);
     }
   };
 
@@ -49,19 +42,16 @@ const Contact = () => {
       <h1>Kontakt</h1>
       <p>Ich freue mich über Ihre Nachricht!</p>
 
-      <form className="contact-form" onSubmit={handleSubmit}>
-        {/* StaticForms Access Key */}
+      <form onSubmit={handleSubmit} className="contact-form">
         <input
           type="hidden"
-          name="accessKey"
-          value="sf_7e1185ae249f6761a8b1ff99"
+          name="apiKey"
+          value="sf_050e5488ad99dc34b571fcde"
         />
-
-        {/* Betreff */}
         <input
           type="hidden"
           name="subject"
-          value="Neue Nachricht von der Website"
+          value="Andreas Dinkelacker submission"
         />
 
         {/* Honeypot */}

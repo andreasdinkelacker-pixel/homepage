@@ -46,7 +46,7 @@ const Contact = () => {
         <input
           type="hidden"
           name="apiKey"
-          value="sf_050e5488ad99dc34b571fcde"
+          value={import.meta.env.VITE_STATICFORMS_API_KEY}
         />
         <input
           type="hidden"

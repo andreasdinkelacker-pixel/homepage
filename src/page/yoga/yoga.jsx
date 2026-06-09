@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import "./Yoga.css";
 
 const Yoga = () => {
@@ -23,6 +24,16 @@ const Yoga = () => {
 
   return (
     <>
+      <Helmet>
+        <title>
+          Yogakurse in Eberbach | Andreas Dinkelacker – Hatha-Yoga &
+          Präventionskurse
+        </title>
+        <meta
+          name="description"
+          content="Yogakurse mit Andreas Dinkelacker in Eberbach und online. Hatha-Yoga, Atem- und Achtsamkeitspraxis, Präventionskurse nach §20 SGB V sowie Yoga für Unternehmen, Gruppen und Einzelpersonen."
+        />
+      </Helmet>
       <div className="first-container">
         <div className="image-section">
           <img src="/images/yoga_01.png" alt="Yogapose" />

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { Helmet } from "react-helmet-async";
 import "./Contact.css";
 
 const Contact = () => {
@@ -38,81 +39,92 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-page">
-      <h1>Kontakt</h1>
-      <p>Ich freue mich über Ihre Nachricht!</p>
-
-      <form onSubmit={handleSubmit} className="contact-form">
-        <input
-          type="hidden"
-          name="apiKey"
-          value={import.meta.env.VITE_STATICFORMS_API_KEY}
+    <>
+      <Helmet>
+        <title>
+          Kontakt | Andreas Dinkelacker – Homöopathie & Yoga in Eberbach
+        </title>
+        <meta
+          name="description"
+          content="Nehmen Sie Kontakt mit Andreas Dinkelacker auf. Informationen zu Yogakursen, klassischer Homöopathie und Terminvereinbarungen in Eberbach. Ich freue mich auf Ihre Anfrage."
         />
-        <input
-          type="hidden"
-          name="subject"
-          value="Andreas Dinkelacker submission"
-        />
+      </Helmet>
+      <div className="contact-page">
+        <h1>Kontakt</h1>
+        <p>Ich freue mich über Ihre Nachricht!</p>
 
-        {/* Honeypot */}
-        <input type="text" name="honeypot" style={{ display: "none" }} />
-
-        <div className="form-group">
-          <label htmlFor="name">Name</label>
+        <form onSubmit={handleSubmit} className="contact-form">
           <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Ihr Name"
-            required
+            type="hidden"
+            name="apiKey"
+            value={import.meta.env.VITE_STATICFORMS_API_KEY}
           />
-        </div>
-
-        <div className="form-group">
-          <label htmlFor="email">E-Mail</label>
           <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Ihre E-Mail-Adresse"
-            required
+            type="hidden"
+            name="subject"
+            value="Andreas Dinkelacker submission"
           />
-        </div>
 
-        <div className="form-group">
-          <label htmlFor="message">Nachricht</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+          {/* Honeypot */}
+          <input type="text" name="honeypot" style={{ display: "none" }} />
 
-        {/* DSGVO Hinweis + Checkbox */}
-        <div className="form-group checkbox-group">
-          <p style={{ fontSize: "0.9rem", color: "#000000" }}>
-            Datenschutz Hinweis: Ihre Angaben werden zur Bearbeitung der
-            Kontaktanfrage und deren Abwicklung gem. Art. 6 Abs. 1 lit. b) DSGVO
-            verarbeitet.
-          </p>
-
-          <label>
+          <div className="form-group">
+            <label htmlFor="name">Name</label>
             <input
-              type="checkbox"
-              checked={consent}
-              onChange={(e) => setConsent(e.target.checked)}
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ihr Name"
               required
-            />{" "}
-            Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen und bin
-            damit einverstanden, dass die von mir angegebenen Daten
-            zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage
-            elektronisch erhoben und gespeichert werden. Mit dem Absenden des
-            Kontaktformulars erkläre ich mich mit der Verarbeitung
-            einverstanden. *
-          </label>
-        </div>
+            />
+          </div>
 
-        <button type="submit">Nachricht senden</button>
+          <div className="form-group">
+            <label htmlFor="email">E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Ihre E-Mail-Adresse"
+              required
+            />
+          </div>
 
-        <p>{status}</p>
-      </form>
-    </div>
+          <div className="form-group">
+            <label htmlFor="message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          {/* DSGVO Hinweis + Checkbox */}
+          <div className="form-group checkbox-group">
+            <p style={{ fontSize: "0.9rem", color: "#000000" }}>
+              Datenschutz Hinweis: Ihre Angaben werden zur Bearbeitung der
+              Kontaktanfrage und deren Abwicklung gem. Art. 6 Abs. 1 lit. b)
+              DSGVO verarbeitet.
+            </p>
+
+            <label>
+              <input
+                type="checkbox"
+                checked={consent}
+                onChange={(e) => setConsent(e.target.checked)}
+                required
+              />{" "}
+              Ja, ich habe die Datenschutzerklärung zur Kenntnis genommen und
+              bin damit einverstanden, dass die von mir angegebenen Daten
+              zweckgebunden zur Bearbeitung und Beantwortung meiner Anfrage
+              elektronisch erhoben und gespeichert werden. Mit dem Absenden des
+              Kontaktformulars erkläre ich mich mit der Verarbeitung
+              einverstanden. *
+            </label>
+          </div>
+
+          <button type="submit">Nachricht senden</button>
+
+          <p>{status}</p>
+        </form>
+      </div>
+    </>
   );
 };
 

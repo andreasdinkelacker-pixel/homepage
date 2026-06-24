@@ -36,7 +36,7 @@ const Yoga = () => {
       </Helmet>
       <div className="first-container">
         <div className="image-section">
-          <img src="/images/yoga_01.png" alt="Yogapose" />
+          <img src="/images/yoga_01.jpg" alt="Yogapose" />
         </div>
         <div className="text-section">
           <div>

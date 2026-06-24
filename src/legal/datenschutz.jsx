@@ -64,33 +64,37 @@ function Datenschutz() {
         Nutzerverhaltens und kein Tracking zu Marketing- oder Statistikzwecken.
       </p>
       <h2>2. Hosting</h2>
-      <p>Wir hosten die Inhalte undserer Webseite bei folgendem Anbieter:</p>
-      <h3>Netlify</h3>
+      <p>Wir hosten die Inhalte unserer Website bei folgendem Anbieter:</p>
+
+      <h3>Vercel</h3>
+
       <p>
-        Diese Website wird bei Netlify Inc., 44 Montgomery Street, Suite 300,
-        San Francisco, CA 94104, USA gehostet.
+        Diese Website wird bei der Vercel Inc., 440 N Barranca Ave #4133,
+        Covina, CA 91723, USA gehostet.
       </p>
 
       <p>
-        Beim Aufruf der Website werden durch Netlify automatisch Informationen
-        in sogenannten Server-Logfiles erfasst. Dies sind insbesondere
-        IP-Adresse, Browsertyp, Betriebssystem sowie Datum und Uhrzeit des
-        Zugriffs.
+        Beim Aufruf dieser Website werden durch Vercel automatisch Informationen
+        in sogenannten Server-Logfiles erfasst. Hierzu können insbesondere die
+        IP-Adresse, Informationen zum verwendeten Browser und Betriebssystem,
+        die aufgerufene URL sowie Datum und Uhrzeit des Zugriffs gehören.
       </p>
 
       <p>
-        Die Verarbeitung erfolgt zur Bereitstellung und Sicherheit der Website
-        auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+        Die Verarbeitung dieser Daten erfolgt zum Zweck der Bereitstellung,
+        Stabilität und Sicherheit der Website auf Grundlage von Art. 6 Abs. 1
+        lit. f DSGVO.
       </p>
+
       <p>
-        Weitere Informationen zur Datenverarbeitung finden Sie in der
-        Datenschutzerklärung von Netlify:
+        Weitere Informationen zur Datenverarbeitung durch Vercel finden Sie in
+        der Datenschutzerklärung von Vercel:
         <a
-          href="https://www.netlify.com/privacy/"
+          href="https://vercel.com/legal/privacy-policy"
           target="_blank"
           rel="noopener noreferrer"
         >
-          https://www.netlify.com/privacy/
+          https://vercel.com/legal/privacy-policy
         </a>
       </p>
       <h2>3. Allgemeine Hinweise und Pflichtinformationen</h2>
